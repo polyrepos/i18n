@@ -1,7 +1,8 @@
 {
   "name": "@polyrepo/i18n",
-  "module": "src/index.ts",
   "description": "Internationalization library for polyrepo projects",
+  "private": false,
+  "module": "src/index.ts",
   "type": "module",
   "main": "./dist/index.cjs",
   "types": "./dist/index.d.ts",
@@ -15,7 +16,8 @@
     }
   },
   "polyCopy": {
-    "@polyrepo/template-bun": [
+    "@polyrepo/template-base": [
+      "package.json.merge",
       ".github",
       "LICENSE",
       ".gitignore",

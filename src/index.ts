@@ -178,7 +178,7 @@ function parseJsonText(jsonString: string) {
 		try {
 			const extractedJson = JSON.parse(extractedJsonString);
 			return extractedJson;
-		} catch (error) {
+		} catch (_error) {
 			return null;
 		}
 	} else {
